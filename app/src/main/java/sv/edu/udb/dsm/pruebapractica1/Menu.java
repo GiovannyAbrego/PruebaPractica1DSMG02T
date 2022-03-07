@@ -21,7 +21,7 @@ public class Menu extends AppCompatActivity {
 
     private void cargarPreferencias() {
         SharedPreferences preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
-        String user=preferences.getString("user","No hay credenciales");
+        String user=preferences.getString("user","No hay credenciales prueba del commit");
         txtvUsuario.setText(user);
     }
 
