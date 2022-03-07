@@ -65,17 +65,21 @@
                 android:id="@+id/imgvCargar"
                 android:layout_marginBottom="4dp"
                 android:layout_gravity="center_horizontal"/>
+
             <Button
                 android:id="@+id/btnGuardar"
-                android:text="Calcular"
-                android:layout_marginBottom="4dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:onClick="onClick"
+                android:text="Calcular" />
+
             <Button
                 android:id="@+id/btnCancelar"
-                android:text="Cancelar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="Cancelar" />
 
 
         </LinearLayout>
