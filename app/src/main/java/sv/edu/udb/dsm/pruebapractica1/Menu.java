@@ -3,6 +3,7 @@ package sv.edu.udb.dsm.pruebapractica1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -27,12 +28,17 @@ public class Menu extends AppCompatActivity {
     public void onClick(View view){
         switch (view.getId()){
             case R.id.btnEjercicio1:
+                Intent llamar = new Intent(this,Ejercicio1.class);
+                startActivity(llamar);
                 break;
             case R.id.btnEjercicio2:
+                Intent llamar2 = new Intent(this,Ejercicio2.class);
+                startActivity(llamar2);
                 break;
             case R.id.btnSalir:
                 reiniciarPreferencias();
                 finish();
+                break;
         }
     }
 

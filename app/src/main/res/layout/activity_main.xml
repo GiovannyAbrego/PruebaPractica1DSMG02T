@@ -10,34 +10,44 @@
         android:id="@+id/btnIngresar"
         android:layout_width="220dp"
         android:layout_height="43dp"
-        android:layout_marginStart="92dp"
-        android:text="Ingresar"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="401dp" />
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onClick"
 
-    <EditText
-        android:id="@+id/txtPassword"
-        android:layout_width="220dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginBottom="56dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/btnIngresar"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Ingresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
     <EditText
         android:id="@+id/txtUsuario"
         android:layout_width="220dp"
         android:layout_height="43dp"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="104dp"
         android:ems="10"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:inputType="textPersonName"
-        android:text="Usuario"
+        android:hint="Usuario"
         app:layout_constraintBottom_toTopOf="@+id/txtPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.772" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="220dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintBottom_toTopOf="@+id/btnIngresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
